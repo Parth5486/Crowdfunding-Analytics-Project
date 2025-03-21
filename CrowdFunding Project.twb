@@ -1,0 +1,1952 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0807.0327                               -->
+<workbook original-version='18.1' source-build='2024.2.2 (20242.24.0807.0327)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Project+ (Main file)' inline='true' name='federated.1tf465f0wzjb5e1eaz1xs01ugkd5' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Main file' name='excel-direct.0fg9l181us3da11eckbq315hss1p'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/PARTH/Downloads/Main file.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0fg9l181us3da11eckbq315hss1p' name='Category' table='[Category$]' type='table'>
+          <columns gridOrigin='A1:D170:no:A1:D170:0' header='yes' outcome='6'>
+            <column datatype='integer' name='id' ordinal='0' />
+            <column datatype='string' name='name' ordinal='1' />
+            <column datatype='integer' name='parent_id' ordinal='2' />
+            <column datatype='integer' name='position' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='excel-direct.0fg9l181us3da11eckbq315hss1p' name='Project' table='[Project$]' type='table'>
+            <columns gridOrigin='A1:AE10001:no:A1:AE10001:0' header='yes' outcome='6'>
+              <column datatype='integer' name='id' ordinal='0' />
+              <column datatype='string' name='status' ordinal='1' />
+              <column datatype='string' name='name' ordinal='2' />
+              <column datatype='string' name='country' ordinal='3' />
+              <column datatype='integer' name='creator_id' ordinal='4' />
+              <column datatype='integer' name='location_id' ordinal='5' />
+              <column datatype='integer' name='category_id' ordinal='6' />
+              <column datatype='integer' name='created_at' ordinal='7' />
+              <column datatype='integer' name='deadline' ordinal='8' />
+              <column datatype='integer' name='updated_at' ordinal='9' />
+              <column datatype='integer' name='status_changed_at' ordinal='10' />
+              <column datatype='integer' name='successful_at' ordinal='11' />
+              <column datatype='integer' name='launched_at' ordinal='12' />
+              <column datatype='integer' name='goal' ordinal='13' />
+              <column datatype='integer' name='pledged' ordinal='14' />
+              <column datatype='string' name='currency' ordinal='15' />
+              <column datatype='string' name='currency_symbol' ordinal='16' />
+              <column datatype='integer' name='usd_pledged' ordinal='17' />
+              <column datatype='integer' name='static_usd_rate' ordinal='18' />
+              <column datatype='integer' name='backers_count' ordinal='19' />
+              <column datatype='boolean' name='spotlight' ordinal='20' />
+              <column datatype='boolean' name='staff_pick' ordinal='21' />
+              <column datatype='string' name='blurb' ordinal='22' />
+              <column datatype='boolean' name='currency_trailing_code' ordinal='23' />
+              <column datatype='boolean' name='disable_communication' ordinal='24' />
+              <column datatype='date' name='created_at_new' ordinal='25' />
+              <column datatype='date' name='deadline_new' ordinal='26' />
+              <column datatype='date' name='updated_at_new' ordinal='27' />
+              <column datatype='date' name='status_changed_at_new' ordinal='28' />
+              <column datatype='date' name='launched_at_new' ordinal='29' />
+              <column datatype='date' name='successful_at_new' ordinal='30' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0fg9l181us3da11eckbq315hss1p' name='Category' table='[Category$]' type='table'>
+            <columns gridOrigin='A1:D170:no:A1:D170:0' header='yes' outcome='6'>
+              <column datatype='integer' name='id' ordinal='0' />
+              <column datatype='string' name='name' ordinal='1' />
+              <column datatype='integer' name='parent_id' ordinal='2' />
+              <column datatype='integer' name='position' ordinal='3' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0fg9l181us3da11eckbq315hss1p' name='Creator' table='[Creator$]' type='table'>
+            <columns gridOrigin='A1:C10001:no:A1:C10001:0' header='yes' outcome='6'>
+              <column datatype='integer' name='id' ordinal='0' />
+              <column datatype='string' name='name' ordinal='1' />
+              <column datatype='string' name='chosen_currency' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0fg9l181us3da11eckbq315hss1p' name='Location' table='[Location$]' type='table'>
+            <columns gridOrigin='A1:I10001:no:A1:I10001:0' header='yes' outcome='6'>
+              <column datatype='integer' name='id' ordinal='0' />
+              <column datatype='string' name='displayable_name' ordinal='1' />
+              <column datatype='string' name='type' ordinal='2' />
+              <column datatype='string' name='name' ordinal='3' />
+              <column datatype='string' name='state' ordinal='4' />
+              <column datatype='string' name='short_name' ordinal='5' />
+              <column datatype='boolean' name='is_root' ordinal='6' />
+              <column datatype='string' name='country' ordinal='7' />
+              <column datatype='string' name='localized_name' ordinal='8' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[backers_count]' value='[Project].[backers_count]' />
+          <map key='[blurb]' value='[Project].[blurb]' />
+          <map key='[category_id]' value='[Project].[category_id]' />
+          <map key='[chosen_currency]' value='[Creator].[chosen_currency]' />
+          <map key='[country (Location)]' value='[Location].[country]' />
+          <map key='[country]' value='[Project].[country]' />
+          <map key='[created_at]' value='[Project].[created_at]' />
+          <map key='[created_at_new]' value='[Project].[created_at_new]' />
+          <map key='[creator_id]' value='[Project].[creator_id]' />
+          <map key='[currency]' value='[Project].[currency]' />
+          <map key='[currency_symbol]' value='[Project].[currency_symbol]' />
+          <map key='[currency_trailing_code]' value='[Project].[currency_trailing_code]' />
+          <map key='[deadline]' value='[Project].[deadline]' />
+          <map key='[deadline_new]' value='[Project].[deadline_new]' />
+          <map key='[disable_communication]' value='[Project].[disable_communication]' />
+          <map key='[displayable_name]' value='[Location].[displayable_name]' />
+          <map key='[goal]' value='[Project].[goal]' />
+          <map key='[id (Category)]' value='[Category].[id]' />
+          <map key='[id (Creator)]' value='[Creator].[id]' />
+          <map key='[id (Location)]' value='[Location].[id]' />
+          <map key='[id]' value='[Project].[id]' />
+          <map key='[is_root]' value='[Location].[is_root]' />
+          <map key='[launched_at]' value='[Project].[launched_at]' />
+          <map key='[launched_at_new]' value='[Project].[launched_at_new]' />
+          <map key='[localized_name]' value='[Location].[localized_name]' />
+          <map key='[location_id]' value='[Project].[location_id]' />
+          <map key='[name (Category)]' value='[Category].[name]' />
+          <map key='[name (Creator)]' value='[Creator].[name]' />
+          <map key='[name (Location)]' value='[Location].[name]' />
+          <map key='[name]' value='[Project].[name]' />
+          <map key='[parent_id]' value='[Category].[parent_id]' />
+          <map key='[pledged]' value='[Project].[pledged]' />
+          <map key='[position]' value='[Category].[position]' />
+          <map key='[short_name]' value='[Location].[short_name]' />
+          <map key='[spotlight]' value='[Project].[spotlight]' />
+          <map key='[staff_pick]' value='[Project].[staff_pick]' />
+          <map key='[state]' value='[Location].[state]' />
+          <map key='[static_usd_rate]' value='[Project].[static_usd_rate]' />
+          <map key='[status]' value='[Project].[status]' />
+          <map key='[status_changed_at]' value='[Project].[status_changed_at]' />
+          <map key='[status_changed_at_new]' value='[Project].[status_changed_at_new]' />
+          <map key='[successful_at]' value='[Project].[successful_at]' />
+          <map key='[successful_at_new]' value='[Project].[successful_at_new]' />
+          <map key='[type]' value='[Location].[type]' />
+          <map key='[updated_at]' value='[Project].[updated_at]' />
+          <map key='[updated_at_new]' value='[Project].[updated_at_new]' />
+          <map key='[usd_pledged]' value='[Project].[usd_pledged]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Project]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:AE10001:no:A1:AE10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Category]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D170:no:A1:D170:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Creator]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C10001:no:A1:C10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Location]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:I10001:no:A1:I10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>status</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[status]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>status</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>creator_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[creator_id]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>creator_id</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[location_id]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>location_id</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>category_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[category_id]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>category_id</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>created_at</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[created_at]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>created_at</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>deadline</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[deadline]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>deadline</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>updated_at</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[updated_at]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>updated_at</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>status_changed_at</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[status_changed_at]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>status_changed_at</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>successful_at</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[successful_at]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>successful_at</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>launched_at</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[launched_at]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>launched_at</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>goal</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[goal]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>goal</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pledged</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[pledged]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>pledged</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>currency</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[currency]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>currency</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>currency_symbol</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[currency_symbol]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>currency_symbol</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>usd_pledged</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[usd_pledged]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>usd_pledged</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>static_usd_rate</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[static_usd_rate]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>static_usd_rate</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>backers_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[backers_count]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>backers_count</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>spotlight</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[spotlight]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>spotlight</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WINBOOL&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>staff_pick</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[staff_pick]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>staff_pick</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WINBOOL&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>blurb</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[blurb]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>blurb</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>currency_trailing_code</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[currency_trailing_code]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>currency_trailing_code</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WINBOOL&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>disable_communication</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[disable_communication]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>disable_communication</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WINBOOL&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>created_at_new</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[created_at_new]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>created_at_new</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>deadline_new</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[deadline_new]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>deadline_new</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>updated_at_new</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[updated_at_new]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>updated_at_new</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>status_changed_at_new</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[status_changed_at_new]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>status_changed_at_new</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>launched_at_new</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[launched_at_new]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>launched_at_new</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>successful_at_new</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[successful_at_new]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>successful_at_new</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id (Category)]</local-name>
+            <parent-name>[Category]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Category_B962EA6A10F645D2851C79D03C02D299]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[name (Category)]</local-name>
+            <parent-name>[Category]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Category_B962EA6A10F645D2851C79D03C02D299]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>parent_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[parent_id]</local-name>
+            <parent-name>[Category]</parent-name>
+            <remote-alias>parent_id</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Category_B962EA6A10F645D2851C79D03C02D299]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>position</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[position]</local-name>
+            <parent-name>[Category]</parent-name>
+            <remote-alias>position</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Category_B962EA6A10F645D2851C79D03C02D299]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id (Creator)]</local-name>
+            <parent-name>[Creator]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Creator_F9133F08FC1B44B289916AD538876923]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[name (Creator)]</local-name>
+            <parent-name>[Creator]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Creator_F9133F08FC1B44B289916AD538876923]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>chosen_currency</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[chosen_currency]</local-name>
+            <parent-name>[Creator]</parent-name>
+            <remote-alias>chosen_currency</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Creator_F9133F08FC1B44B289916AD538876923]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id (Location)]</local-name>
+            <parent-name>[Location]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Location_FE27C7A373FC4F0587BC61540FB7F371]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>displayable_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[displayable_name]</local-name>
+            <parent-name>[Location]</parent-name>
+            <remote-alias>displayable_name</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Location_FE27C7A373FC4F0587BC61540FB7F371]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[type]</local-name>
+            <parent-name>[Location]</parent-name>
+            <remote-alias>type</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Location_FE27C7A373FC4F0587BC61540FB7F371]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[name (Location)]</local-name>
+            <parent-name>[Location]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Location_FE27C7A373FC4F0587BC61540FB7F371]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[Location]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Location_FE27C7A373FC4F0587BC61540FB7F371]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>short_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[short_name]</local-name>
+            <parent-name>[Location]</parent-name>
+            <remote-alias>short_name</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Location_FE27C7A373FC4F0587BC61540FB7F371]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_root</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[is_root]</local-name>
+            <parent-name>[Location]</parent-name>
+            <remote-alias>is_root</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WINBOOL&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Location_FE27C7A373FC4F0587BC61540FB7F371]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[country (Location)]</local-name>
+            <parent-name>[Location]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Location_FE27C7A373FC4F0587BC61540FB7F371]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>localized_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[localized_name]</local-name>
+            <parent-name>[Location]</parent-name>
+            <remote-alias>localized_name</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Location_FE27C7A373FC4F0587BC61540FB7F371]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Year' datatype='date' datatype-customized='true' name='[Calculation_1269733652187840512]' role='dimension' type='quantitative'>
+        <calculation class='tableau' formula='DATE(DATEPARSE ( &quot;yyyy&quot;, STR(YEAR([created_at_new])) )) ' />
+      </column>
+      <column caption='Month no' datatype='integer' datatype-customized='true' name='[Calculation_1269733652188684289]' role='dimension' type='quantitative'>
+        <calculation class='tableau' formula='MONTH([created_at_new])' />
+      </column>
+      <column caption='Month Name' datatype='string' name='[Calculation_1269733652189122562]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='DATENAME(&apos;month&apos;,[created_at_new])' />
+      </column>
+      <column caption='Quarter' datatype='string' name='[Calculation_1269733652192399363]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&apos;Q&apos; + STR(DATEPART(&apos;quarter&apos;,[created_at_new]))' />
+      </column>
+      <column caption='Week Day no' datatype='integer' name='[Calculation_1269733652193759236]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='DATEPART(&apos;weekday&apos;,[created_at_new])' />
+      </column>
+      <column caption='Week Day Name' datatype='string' name='[Calculation_1269733652195627013]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='DATENAME(&apos;weekday&apos;,[created_at_new])' />
+      </column>
+      <column caption='Financial Month' datatype='string' name='[Calculation_1269733652196429830]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='CASE MONTH([created_at_new])&#13;&#10;WHEN 4 THEN &apos;FM1&apos;&#13;&#10;WHEN 5 THEN &apos;FM2&apos;&#13;&#10;WHEN 6 THEN &apos;FM3&apos;&#13;&#10;WHEN 7 THEN &apos;FM4&apos;&#13;&#10;WHEN 8 THEN &apos;FM5&apos;&#13;&#10;WHEN 9 THEN &apos;FM6&apos;&#13;&#10;WHEN 10 THEN &apos;FM7&apos;&#13;&#10;WHEN 11 THEN &apos;FM8&apos;&#13;&#10;WHEN 12 THEN &apos;FM9&apos;&#13;&#10;WHEN 1 THEN &apos;FM10&apos;&#13;&#10;WHEN 2 THEN &apos;FM11&apos;&#13;&#10;WHEN 3 THEN &apos;FM12&apos;&#13;&#10;END' />
+      </column>
+      <column caption='Financial Quarter' datatype='string' name='[Calculation_1269733652198739975]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='CASE MONTH([created_at_new])&#13;&#10;WHEN 4 THEN &apos;FQ1&apos;&#13;&#10;WHEN 5 THEN &apos;FQ1&apos;&#13;&#10;WHEN 6 THEN &apos;FQ1&apos;&#13;&#10;WHEN 7 THEN &apos;FQ2&apos;&#13;&#10;WHEN 8 THEN &apos;FQ2&apos;&#13;&#10;WHEN 9 THEN &apos;FQ2&apos;&#13;&#10;WHEN 10 THEN &apos;FQ3&apos;&#13;&#10;WHEN 11 THEN &apos;FQ3&apos;&#13;&#10;WHEN 12 THEN &apos;FQ3&apos;&#13;&#10;WHEN 1 THEN &apos;FQ4&apos;&#13;&#10;WHEN 2 THEN &apos;FQ4&apos;&#13;&#10;WHEN 3 THEN &apos;FQ4&apos;&#13;&#10;END' />
+      </column>
+      <column caption='YYYY-MMM' datatype='string' name='[Calculation_1269733652199890952]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='STR(YEAR([created_at_new]))+ &apos;-&apos; +LEFT(DATENAME(&apos;month&apos;,[created_at_new]),3)' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='Category' datatype='table' name='[__tableau_internal_object_id__].[Category_B962EA6A10F645D2851C79D03C02D299]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Creator' datatype='table' name='[__tableau_internal_object_id__].[Creator_F9133F08FC1B44B289916AD538876923]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Location' datatype='table' name='[__tableau_internal_object_id__].[Location_FE27C7A373FC4F0587BC61540FB7F371]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Project' datatype='table' name='[__tableau_internal_object_id__].[Project_61BF23DDF3814CB188B548C61DD1BDDA]' role='measure' type='quantitative' />
+      <column caption='Backers Count' datatype='integer' name='[backers_count]' role='measure' type='quantitative' />
+      <column caption='Blurb' datatype='string' name='[blurb]' role='dimension' type='nominal' />
+      <column caption='Category Id' datatype='integer' name='[category_id]' role='dimension' type='ordinal' />
+      <column caption='Chosen Currency' datatype='string' name='[chosen_currency]' role='dimension' type='nominal' />
+      <column datatype='string' name='[country (Location)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Created At' datatype='integer' name='[created_at]' role='measure' type='quantitative' />
+      <column caption='Created At New' datatype='date' name='[created_at_new]' role='dimension' type='ordinal' />
+      <column caption='Creator Id' datatype='integer' name='[creator_id]' role='dimension' type='ordinal' />
+      <column caption='Currency' datatype='string' name='[currency]' role='dimension' type='nominal' />
+      <column caption='Currency Symbol' datatype='string' name='[currency_symbol]' role='dimension' type='nominal' />
+      <column caption='Currency Trailing Code' datatype='boolean' name='[currency_trailing_code]' role='dimension' type='nominal' />
+      <column caption='Deadline' datatype='integer' name='[deadline]' role='measure' type='quantitative' />
+      <column caption='Deadline New' datatype='date' name='[deadline_new]' role='dimension' type='ordinal' />
+      <column caption='Disable Communication' datatype='boolean' name='[disable_communication]' role='dimension' type='nominal' />
+      <column caption='Displayable Name' datatype='string' name='[displayable_name]' role='dimension' type='nominal' />
+      <column caption='Goal' datatype='integer' name='[goal]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[id (Category)]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[id (Creator)]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[id (Location)]' role='dimension' type='ordinal' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column caption='Is Root' datatype='boolean' name='[is_root]' role='dimension' type='nominal' />
+      <column caption='Launched At' datatype='integer' name='[launched_at]' role='measure' type='quantitative' />
+      <column caption='Launched At New' datatype='date' name='[launched_at_new]' role='dimension' type='ordinal' />
+      <column caption='Localized Name' datatype='string' name='[localized_name]' role='dimension' type='nominal' />
+      <column caption='Location Id' datatype='integer' name='[location_id]' role='dimension' type='ordinal' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Parent Id' datatype='integer' name='[parent_id]' role='dimension' type='ordinal' />
+      <column caption='Pledged' datatype='integer' name='[pledged]' role='measure' type='quantitative' />
+      <column caption='Position' datatype='integer' name='[position]' role='measure' type='quantitative' />
+      <column caption='Short Name' datatype='string' name='[short_name]' role='dimension' type='nominal' />
+      <column caption='Spotlight' datatype='boolean' name='[spotlight]' role='dimension' type='nominal' />
+      <column caption='Staff Pick' datatype='boolean' name='[staff_pick]' role='dimension' type='nominal' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Static Usd Rate' datatype='integer' name='[static_usd_rate]' role='measure' type='quantitative' />
+      <column caption='Status' datatype='string' name='[status]' role='dimension' type='nominal' />
+      <column caption='Status Changed At' datatype='integer' name='[status_changed_at]' role='measure' type='quantitative' />
+      <column caption='Status Changed At New' datatype='date' name='[status_changed_at_new]' role='dimension' type='ordinal' />
+      <column caption='Successful At' datatype='integer' name='[successful_at]' role='measure' type='quantitative' />
+      <column caption='Successful At New' datatype='date' name='[successful_at_new]' role='dimension' type='ordinal' />
+      <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+      <column caption='Updated At' datatype='integer' name='[updated_at]' role='measure' type='quantitative' />
+      <column caption='Updated At New' datatype='date' name='[updated_at_new]' role='dimension' type='ordinal' />
+      <column caption='Usd Pledged' datatype='integer' name='[usd_pledged]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/PARTH/AppData/Local/Temp/TableauTemp/#TableauTemp_1xyj2vc1a73cl913tdr191wzi1af.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='01/03/2025 09:54:58 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Category_B962EA6A10F645D2851C79D03C02D299' table='[Extract].[Category_B962EA6A10F645D2851C79D03C02D299]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+            <relation name='Project_61BF23DDF3814CB188B548C61DD1BDDA' table='[Extract].[Project_61BF23DDF3814CB188B548C61DD1BDDA]' type='table' />
+            <relation name='Category_B962EA6A10F645D2851C79D03C02D299' table='[Extract].[Category_B962EA6A10F645D2851C79D03C02D299]' type='table' />
+            <relation name='Creator_F9133F08FC1B44B289916AD538876923' table='[Extract].[Creator_F9133F08FC1B44B289916AD538876923]' type='table' />
+            <relation name='Location_FE27C7A373FC4F0587BC61540FB7F371' table='[Extract].[Location_FE27C7A373FC4F0587BC61540FB7F371]' type='table' />
+          </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+          <cols>
+            <map key='[backers_count]' value='[Project_61BF23DDF3814CB188B548C61DD1BDDA].[backers_count]' />
+            <map key='[blurb]' value='[Project_61BF23DDF3814CB188B548C61DD1BDDA].[blurb]' />
+            <map key='[category_id]' value='[Project_61BF23DDF3814CB188B548C61DD1BDDA].[category_id]' />
+            <map key='[chosen_currency]' value='[Creator_F9133F08FC1B44B289916AD538876923].[chosen_currency]' />
+            <map key='[country (Location)]' value='[Location_FE27C7A373FC4F0587BC61540FB7F371].[country]' />
+            <map key='[country]' value='[Project_61BF23DDF3814CB188B548C61DD1BDDA].[country]' />
+            <map key='[created_at]' value='[Project_61BF23DDF3814CB188B548C61DD1BDDA].[created_at]' />
+            <map key='[created_at_new]' value='[Project_61BF23DDF3814CB188B548C61DD1BDDA].[created_at_new]' />
+            <map key='[creator_id]' value='[Project_61BF23DDF3814CB188B548C61DD1BDDA].[creator_id]' />
+            <map key='[currency]' value='[Project_61BF23DDF3814CB188B548C61DD1BDDA].[currency]' />
+            <map key='[currency_symbol]' value='[Project_61BF23DDF3814CB188B548C61DD1BDDA].[currency_symbol]' />
+            <map key='[currency_trailing_code]' value='[Project_61BF23DDF3814CB188B548C61DD1BDDA].[currency_trailing_code]' />
+            <map key='[deadline]' value='[Project_61BF23DDF3814CB188B548C61DD1BDDA].[deadline]' />
+            <map key='[deadline_new]' value='[Project_61BF23DDF3814CB188B548C61DD1BDDA].[deadline_new]' />
+            <map key='[disable_communication]' value='[Project_61BF23DDF3814CB188B548C61DD1BDDA].[disable_communication]' />
+            <map key='[displayable_name]' value='[Location_FE27C7A373FC4F0587BC61540FB7F371].[displayable_name]' />
+            <map key='[goal]' value='[Project_61BF23DDF3814CB188B548C61DD1BDDA].[goal]' />
+            <map key='[id (Category)]' value='[Category_B962EA6A10F645D2851C79D03C02D299].[id]' />
+            <map key='[id (Creator)]' value='[Creator_F9133F08FC1B44B289916AD538876923].[id]' />
+            <map key='[id (Location)]' value='[Location_FE27C7A373FC4F0587BC61540FB7F371].[id]' />
+            <map key='[id]' value='[Project_61BF23DDF3814CB188B548C61DD1BDDA].[id]' />
+            <map key='[is_root]' value='[Location_FE27C7A373FC4F0587BC61540FB7F371].[is_root]' />
+            <map key='[launched_at]' value='[Project_61BF23DDF3814CB188B548C61DD1BDDA].[launched_at]' />
+            <map key='[launched_at_new]' value='[Project_61BF23DDF3814CB188B548C61DD1BDDA].[launched_at_new]' />
+            <map key='[localized_name]' value='[Location_FE27C7A373FC4F0587BC61540FB7F371].[localized_name]' />
+            <map key='[location_id]' value='[Project_61BF23DDF3814CB188B548C61DD1BDDA].[location_id]' />
+            <map key='[name (Category)]' value='[Category_B962EA6A10F645D2851C79D03C02D299].[name]' />
+            <map key='[name (Creator)]' value='[Creator_F9133F08FC1B44B289916AD538876923].[name]' />
+            <map key='[name (Location)]' value='[Location_FE27C7A373FC4F0587BC61540FB7F371].[name]' />
+            <map key='[name]' value='[Project_61BF23DDF3814CB188B548C61DD1BDDA].[name]' />
+            <map key='[parent_id]' value='[Category_B962EA6A10F645D2851C79D03C02D299].[parent_id]' />
+            <map key='[pledged]' value='[Project_61BF23DDF3814CB188B548C61DD1BDDA].[pledged]' />
+            <map key='[position]' value='[Category_B962EA6A10F645D2851C79D03C02D299].[position]' />
+            <map key='[short_name]' value='[Location_FE27C7A373FC4F0587BC61540FB7F371].[short_name]' />
+            <map key='[spotlight]' value='[Project_61BF23DDF3814CB188B548C61DD1BDDA].[spotlight]' />
+            <map key='[staff_pick]' value='[Project_61BF23DDF3814CB188B548C61DD1BDDA].[staff_pick]' />
+            <map key='[state]' value='[Location_FE27C7A373FC4F0587BC61540FB7F371].[state]' />
+            <map key='[static_usd_rate]' value='[Project_61BF23DDF3814CB188B548C61DD1BDDA].[static_usd_rate]' />
+            <map key='[status]' value='[Project_61BF23DDF3814CB188B548C61DD1BDDA].[status]' />
+            <map key='[status_changed_at]' value='[Project_61BF23DDF3814CB188B548C61DD1BDDA].[status_changed_at]' />
+            <map key='[status_changed_at_new]' value='[Project_61BF23DDF3814CB188B548C61DD1BDDA].[status_changed_at_new]' />
+            <map key='[successful_at]' value='[Project_61BF23DDF3814CB188B548C61DD1BDDA].[successful_at]' />
+            <map key='[successful_at_new]' value='[Project_61BF23DDF3814CB188B548C61DD1BDDA].[successful_at_new]' />
+            <map key='[type]' value='[Location_FE27C7A373FC4F0587BC61540FB7F371].[type]' />
+            <map key='[updated_at]' value='[Project_61BF23DDF3814CB188B548C61DD1BDDA].[updated_at]' />
+            <map key='[updated_at_new]' value='[Project_61BF23DDF3814CB188B548C61DD1BDDA].[updated_at_new]' />
+            <map key='[usd_pledged]' value='[Project_61BF23DDF3814CB188B548C61DD1BDDA].[usd_pledged]' />
+          </cols>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[id]</local-name>
+              <parent-name>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</parent-name>
+              <remote-alias>id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Project</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>365892</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[status]</local-name>
+              <parent-name>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</parent-name>
+              <remote-alias>status</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Project</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[name]</local-name>
+              <parent-name>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</parent-name>
+              <remote-alias>name</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Project</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>365892</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[country]</local-name>
+              <parent-name>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</parent-name>
+              <remote-alias>country</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Project</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>creator_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[creator_id]</local-name>
+              <parent-name>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</parent-name>
+              <remote-alias>creator_id</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Project</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>333556</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>location_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[location_id]</local-name>
+              <parent-name>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</parent-name>
+              <remote-alias>location_id</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Project</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10459</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>category_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[category_id]</local-name>
+              <parent-name>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</parent-name>
+              <remote-alias>category_id</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Project</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>387</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>created_at</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[created_at]</local-name>
+              <parent-name>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</parent-name>
+              <remote-alias>created_at</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Project</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>365892</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>deadline</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[deadline]</local-name>
+              <parent-name>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</parent-name>
+              <remote-alias>deadline</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Project</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>365892</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>updated_at</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[updated_at]</local-name>
+              <parent-name>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</parent-name>
+              <remote-alias>updated_at</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Project</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>204128</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>status_changed_at</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[status_changed_at]</local-name>
+              <parent-name>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</parent-name>
+              <remote-alias>status_changed_at</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Project</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>365892</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>successful_at</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[successful_at]</local-name>
+              <parent-name>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</parent-name>
+              <remote-alias>successful_at</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Project</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>launched_at</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[launched_at]</local-name>
+              <parent-name>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</parent-name>
+              <remote-alias>launched_at</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Project</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>365892</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>goal</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[goal]</local-name>
+              <parent-name>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</parent-name>
+              <remote-alias>goal</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Project</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2259</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pledged</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[pledged]</local-name>
+              <parent-name>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</parent-name>
+              <remote-alias>pledged</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Project</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27017</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>currency</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[currency]</local-name>
+              <parent-name>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</parent-name>
+              <remote-alias>currency</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Project</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>currency_symbol</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[currency_symbol]</local-name>
+              <parent-name>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</parent-name>
+              <remote-alias>currency_symbol</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Project</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>usd_pledged</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[usd_pledged]</local-name>
+              <parent-name>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</parent-name>
+              <remote-alias>usd_pledged</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Project</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26770</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>static_usd_rate</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[static_usd_rate]</local-name>
+              <parent-name>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</parent-name>
+              <remote-alias>static_usd_rate</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Project</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>backers_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[backers_count]</local-name>
+              <parent-name>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</parent-name>
+              <remote-alias>backers_count</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Project</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2577</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>spotlight</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[spotlight]</local-name>
+              <parent-name>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</parent-name>
+              <remote-alias>spotlight</remote-alias>
+              <ordinal>20</ordinal>
+              <family>Project</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>staff_pick</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[staff_pick]</local-name>
+              <parent-name>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</parent-name>
+              <remote-alias>staff_pick</remote-alias>
+              <ordinal>21</ordinal>
+              <family>Project</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>blurb</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[blurb]</local-name>
+              <parent-name>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</parent-name>
+              <remote-alias>blurb</remote-alias>
+              <ordinal>22</ordinal>
+              <family>Project</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>355114</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>currency_trailing_code</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[currency_trailing_code]</local-name>
+              <parent-name>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</parent-name>
+              <remote-alias>currency_trailing_code</remote-alias>
+              <ordinal>23</ordinal>
+              <family>Project</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>disable_communication</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[disable_communication]</local-name>
+              <parent-name>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</parent-name>
+              <remote-alias>disable_communication</remote-alias>
+              <ordinal>24</ordinal>
+              <family>Project</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>created_at_new</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[created_at_new]</local-name>
+              <parent-name>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</parent-name>
+              <remote-alias>created_at_new</remote-alias>
+              <ordinal>25</ordinal>
+              <family>Project</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>18338</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>deadline_new</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[deadline_new]</local-name>
+              <parent-name>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</parent-name>
+              <remote-alias>deadline_new</remote-alias>
+              <ordinal>26</ordinal>
+              <family>Project</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>16483</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>updated_at_new</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[updated_at_new]</local-name>
+              <parent-name>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</parent-name>
+              <remote-alias>updated_at_new</remote-alias>
+              <ordinal>27</ordinal>
+              <family>Project</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>8742</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>status_changed_at_new</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[status_changed_at_new]</local-name>
+              <parent-name>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</parent-name>
+              <remote-alias>status_changed_at_new</remote-alias>
+              <ordinal>28</ordinal>
+              <family>Project</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>15832</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>launched_at_new</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[launched_at_new]</local-name>
+              <parent-name>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</parent-name>
+              <remote-alias>launched_at_new</remote-alias>
+              <ordinal>29</ordinal>
+              <family>Project</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>15138</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>successful_at_new</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[successful_at_new]</local-name>
+              <parent-name>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</parent-name>
+              <remote-alias>successful_at_new</remote-alias>
+              <ordinal>30</ordinal>
+              <family>Project</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>23278</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_61BF23DDF3814CB188B548C61DD1BDDA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[id (Category)]</local-name>
+              <parent-name>[Category_B962EA6A10F645D2851C79D03C02D299]</parent-name>
+              <remote-alias>id</remote-alias>
+              <ordinal>31</ordinal>
+              <family>Category</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>169</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Category_B962EA6A10F645D2851C79D03C02D299]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[name (Category)]</local-name>
+              <parent-name>[Category_B962EA6A10F645D2851C79D03C02D299]</parent-name>
+              <remote-alias>name</remote-alias>
+              <ordinal>32</ordinal>
+              <family>Category</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>159</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Category_B962EA6A10F645D2851C79D03C02D299]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>parent_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[parent_id]</local-name>
+              <parent-name>[Category_B962EA6A10F645D2851C79D03C02D299]</parent-name>
+              <remote-alias>parent_id</remote-alias>
+              <ordinal>33</ordinal>
+              <family>Category</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Category_B962EA6A10F645D2851C79D03C02D299]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>position</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[position]</local-name>
+              <parent-name>[Category_B962EA6A10F645D2851C79D03C02D299]</parent-name>
+              <remote-alias>position</remote-alias>
+              <ordinal>34</ordinal>
+              <family>Category</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Category_B962EA6A10F645D2851C79D03C02D299]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[id (Creator)]</local-name>
+              <parent-name>[Creator_F9133F08FC1B44B289916AD538876923]</parent-name>
+              <remote-alias>id</remote-alias>
+              <ordinal>35</ordinal>
+              <family>Creator</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>334841</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Creator_F9133F08FC1B44B289916AD538876923]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[name (Creator)]</local-name>
+              <parent-name>[Creator_F9133F08FC1B44B289916AD538876923]</parent-name>
+              <remote-alias>name</remote-alias>
+              <ordinal>36</ordinal>
+              <family>Creator</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>291729</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Creator_F9133F08FC1B44B289916AD538876923]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>chosen_currency</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[chosen_currency]</local-name>
+              <parent-name>[Creator_F9133F08FC1B44B289916AD538876923]</parent-name>
+              <remote-alias>chosen_currency</remote-alias>
+              <ordinal>37</ordinal>
+              <family>Creator</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Creator_F9133F08FC1B44B289916AD538876923]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[id (Location)]</local-name>
+              <parent-name>[Location_FE27C7A373FC4F0587BC61540FB7F371]</parent-name>
+              <remote-alias>id</remote-alias>
+              <ordinal>38</ordinal>
+              <family>Location</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>23252</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Location_FE27C7A373FC4F0587BC61540FB7F371]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>displayable_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[displayable_name]</local-name>
+              <parent-name>[Location_FE27C7A373FC4F0587BC61540FB7F371]</parent-name>
+              <remote-alias>displayable_name</remote-alias>
+              <ordinal>39</ordinal>
+              <family>Location</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>18963</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Location_FE27C7A373FC4F0587BC61540FB7F371]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[type]</local-name>
+              <parent-name>[Location_FE27C7A373FC4F0587BC61540FB7F371]</parent-name>
+              <remote-alias>type</remote-alias>
+              <ordinal>40</ordinal>
+              <family>Location</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Location_FE27C7A373FC4F0587BC61540FB7F371]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[name (Location)]</local-name>
+              <parent-name>[Location_FE27C7A373FC4F0587BC61540FB7F371]</parent-name>
+              <remote-alias>name</remote-alias>
+              <ordinal>41</ordinal>
+              <family>Location</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>14666</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Location_FE27C7A373FC4F0587BC61540FB7F371]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>state</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[state]</local-name>
+              <parent-name>[Location_FE27C7A373FC4F0587BC61540FB7F371]</parent-name>
+              <remote-alias>state</remote-alias>
+              <ordinal>42</ordinal>
+              <family>Location</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>907</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Location_FE27C7A373FC4F0587BC61540FB7F371]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>short_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[short_name]</local-name>
+              <parent-name>[Location_FE27C7A373FC4F0587BC61540FB7F371]</parent-name>
+              <remote-alias>short_name</remote-alias>
+              <ordinal>43</ordinal>
+              <family>Location</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>16816</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Location_FE27C7A373FC4F0587BC61540FB7F371]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>is_root</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[is_root]</local-name>
+              <parent-name>[Location_FE27C7A373FC4F0587BC61540FB7F371]</parent-name>
+              <remote-alias>is_root</remote-alias>
+              <ordinal>44</ordinal>
+              <family>Location</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Location_FE27C7A373FC4F0587BC61540FB7F371]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[country (Location)]</local-name>
+              <parent-name>[Location_FE27C7A373FC4F0587BC61540FB7F371]</parent-name>
+              <remote-alias>country</remote-alias>
+              <ordinal>45</ordinal>
+              <family>Location</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>165</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Location_FE27C7A373FC4F0587BC61540FB7F371]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>localized_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[localized_name]</local-name>
+              <parent-name>[Location_FE27C7A373FC4F0587BC61540FB7F371]</parent-name>
+              <remote-alias>localized_name</remote-alias>
+              <ordinal>46</ordinal>
+              <family>Location</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10252</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Location_FE27C7A373FC4F0587BC61540FB7F371]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Category' id='Category_B962EA6A10F645D2851C79D03C02D299'>
+            <properties context=''>
+              <relation connection='excel-direct.0fg9l181us3da11eckbq315hss1p' name='Category' table='[Category$]' type='table'>
+                <columns gridOrigin='A1:D170:no:A1:D170:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='id' ordinal='0' />
+                  <column datatype='string' name='name' ordinal='1' />
+                  <column datatype='integer' name='parent_id' ordinal='2' />
+                  <column datatype='integer' name='position' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Category_B962EA6A10F645D2851C79D03C02D299' table='[Extract].[Category_B962EA6A10F645D2851C79D03C02D299]' type='table' />
+            </properties>
+          </object>
+          <object caption='Creator' id='Creator_F9133F08FC1B44B289916AD538876923'>
+            <properties context=''>
+              <relation connection='excel-direct.0fg9l181us3da11eckbq315hss1p' name='Creator' table='[Creator$]' type='table'>
+                <columns gridOrigin='A1:C10001:no:A1:C10001:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='id' ordinal='0' />
+                  <column datatype='string' name='name' ordinal='1' />
+                  <column datatype='string' name='chosen_currency' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Creator_F9133F08FC1B44B289916AD538876923' table='[Extract].[Creator_F9133F08FC1B44B289916AD538876923]' type='table' />
+            </properties>
+          </object>
+          <object caption='Location' id='Location_FE27C7A373FC4F0587BC61540FB7F371'>
+            <properties context=''>
+              <relation connection='excel-direct.0fg9l181us3da11eckbq315hss1p' name='Location' table='[Location$]' type='table'>
+                <columns gridOrigin='A1:I10001:no:A1:I10001:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='id' ordinal='0' />
+                  <column datatype='string' name='displayable_name' ordinal='1' />
+                  <column datatype='string' name='type' ordinal='2' />
+                  <column datatype='string' name='name' ordinal='3' />
+                  <column datatype='string' name='state' ordinal='4' />
+                  <column datatype='string' name='short_name' ordinal='5' />
+                  <column datatype='boolean' name='is_root' ordinal='6' />
+                  <column datatype='string' name='country' ordinal='7' />
+                  <column datatype='string' name='localized_name' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Location_FE27C7A373FC4F0587BC61540FB7F371' table='[Extract].[Location_FE27C7A373FC4F0587BC61540FB7F371]' type='table' />
+            </properties>
+          </object>
+          <object caption='Project' id='Project_61BF23DDF3814CB188B548C61DD1BDDA'>
+            <properties context=''>
+              <relation connection='excel-direct.0fg9l181us3da11eckbq315hss1p' name='Project' table='[Project$]' type='table'>
+                <columns gridOrigin='A1:AE10001:no:A1:AE10001:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='id' ordinal='0' />
+                  <column datatype='string' name='status' ordinal='1' />
+                  <column datatype='string' name='name' ordinal='2' />
+                  <column datatype='string' name='country' ordinal='3' />
+                  <column datatype='integer' name='creator_id' ordinal='4' />
+                  <column datatype='integer' name='location_id' ordinal='5' />
+                  <column datatype='integer' name='category_id' ordinal='6' />
+                  <column datatype='integer' name='created_at' ordinal='7' />
+                  <column datatype='integer' name='deadline' ordinal='8' />
+                  <column datatype='integer' name='updated_at' ordinal='9' />
+                  <column datatype='integer' name='status_changed_at' ordinal='10' />
+                  <column datatype='integer' name='successful_at' ordinal='11' />
+                  <column datatype='integer' name='launched_at' ordinal='12' />
+                  <column datatype='integer' name='goal' ordinal='13' />
+                  <column datatype='integer' name='pledged' ordinal='14' />
+                  <column datatype='string' name='currency' ordinal='15' />
+                  <column datatype='string' name='currency_symbol' ordinal='16' />
+                  <column datatype='integer' name='usd_pledged' ordinal='17' />
+                  <column datatype='integer' name='static_usd_rate' ordinal='18' />
+                  <column datatype='integer' name='backers_count' ordinal='19' />
+                  <column datatype='boolean' name='spotlight' ordinal='20' />
+                  <column datatype='boolean' name='staff_pick' ordinal='21' />
+                  <column datatype='string' name='blurb' ordinal='22' />
+                  <column datatype='boolean' name='currency_trailing_code' ordinal='23' />
+                  <column datatype='boolean' name='disable_communication' ordinal='24' />
+                  <column datatype='date' name='created_at_new' ordinal='25' />
+                  <column datatype='date' name='deadline_new' ordinal='26' />
+                  <column datatype='date' name='updated_at_new' ordinal='27' />
+                  <column datatype='date' name='status_changed_at_new' ordinal='28' />
+                  <column datatype='date' name='launched_at_new' ordinal='29' />
+                  <column datatype='date' name='successful_at_new' ordinal='30' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Project_61BF23DDF3814CB188B548C61DD1BDDA' table='[Extract].[Project_61BF23DDF3814CB188B548C61DD1BDDA]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[category_id]' />
+              <expression op='[id (Category)]' />
+            </expression>
+            <first-end-point object-id='Project_61BF23DDF3814CB188B548C61DD1BDDA' />
+            <second-end-point object-id='Category_B962EA6A10F645D2851C79D03C02D299' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[creator_id]' />
+              <expression op='[id (Creator)]' />
+            </expression>
+            <first-end-point object-id='Project_61BF23DDF3814CB188B548C61DD1BDDA' />
+            <second-end-point object-id='Creator_F9133F08FC1B44B289916AD538876923' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[location_id]' />
+              <expression op='[id (Location)]' />
+            </expression>
+            <first-end-point object-id='Project_61BF23DDF3814CB188B548C61DD1BDDA' />
+            <second-end-point object-id='Location_FE27C7A373FC4F0587BC61540FB7F371' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{3A6088BD-F9DF-47B7-AAA5-3B9A19F24B8C}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1tf465f0wzjb5e1eaz1xs01ugkd5].[none:Calculation_1269733652189122562:nk]</field>
+            <field>[federated.1tf465f0wzjb5e1eaz1xs01ugkd5].[none:Calculation_1269733652192399363:nk]</field>
+            <field>[federated.1tf465f0wzjb5e1eaz1xs01ugkd5].[none:Calculation_1269733652193759236:qk]</field>
+            <field>[federated.1tf465f0wzjb5e1eaz1xs01ugkd5].[none:Calculation_1269733652195627013:nk]</field>
+            <field>[federated.1tf465f0wzjb5e1eaz1xs01ugkd5].[none:Calculation_1269733652196429830:nk]</field>
+            <field>[federated.1tf465f0wzjb5e1eaz1xs01ugkd5].[none:Calculation_1269733652198739975:nk]</field>
+            <field>[federated.1tf465f0wzjb5e1eaz1xs01ugkd5].[none:Calculation_1269733652199890952:nk]</field>
+            <field>[federated.1tf465f0wzjb5e1eaz1xs01ugkd5].[yr:created_at_new:ok]</field>
+            <field>[federated.1tf465f0wzjb5e1eaz1xs01ugkd5].[yr:successful_at_new:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{1325DE1D-432E-462A-9BCB-8FA16CCCFC29}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
